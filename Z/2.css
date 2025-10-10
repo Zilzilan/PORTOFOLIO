@@ -1,0 +1,199 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+.nav-warna {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 9%;
+  background: transparent; /* bisa diganti warna jika perlu */
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-left li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.nav-left li:hover a,
+.nav-left li.active a {
+  color: rgb(150, 0, 0);
+}
+
+
+.h1-cuy {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h1-cuy {
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+.h1-cuy{
+margin-right: -10px ;
+
+}
+
+
+.HOME {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 60px 20px;
+}
+/* ieu no kotak gaes */
+.home-info {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(253, 1, 1, 0.06);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 8px 30px rgba(255, 3, 3, 0.25);
+  transform: translateY(20px);
+  animation: popUp 0.8s ease forwards;
+}
+
+/* animasi popup cenah */
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== TEKS ===== */
+.home-info h1 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 42px;
+  margin-bottom: 6px;
+  color: white;
+  font-style: italic;
+}
+
+.home-info h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #f0f6ff;
+}
+
+.home-info h2 span {
+  color: #a10904;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.home-info p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 700px;
+  line-height: 1.4;
+}
+
+/* ===== BUTTON + ICON ===== */
+.btn-sci {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.22s ease;
+}
+
+.btn:hover {
+  background: rgba(219, 5, 5, 0.22);
+  transform: translateY(-3px);
+}
+
+
+.wa-icon,
+.ig-logo {
+  font-size: 26px;
+  transition: transform .3s ease, color .3s ease;
+  color: #a10904;;            
+  background: none;         
+  -webkit-text-fill-color: currentColor; 
+  display: inline-block;     }
+
+
+.btn-sci .ig-logo:hover {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  background-clip: text;             
+  -webkit-text-fill-color: transparent; 
+  transform: scale(1.2);
+}
+
+
+.btn-sci .wa-icon:hover {
+  color: #25d366;
+  transform: scale(1.2);
+}
+
+
+
+@media (max-width: 600px) {
+  .HOME {
+    padding: 100px 16px;
+  }
+  .home-info {
+    padding: 20px;
+  }
+  .home-info h1 {
+    font-size: 28px;
+  }
+}
