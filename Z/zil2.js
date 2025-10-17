@@ -6,7 +6,7 @@
     
   } else {
     
-    const phrases = ["Zilzilan", "Front-end Developer", "Skateboarding"];
+    const phrases = ["Astrid Dwi Pratiwi", "Front-end Developer", "Skateboarding"];
     const typingSpeed = 80;      
     const deletingSpeed = 50;    
     const pauseAfterTyping = 1200;
