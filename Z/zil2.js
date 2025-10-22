@@ -1,4 +1,4 @@
- // ambil elemen target
+
   const el = document.getElementById('zil');
 
   if (!el) {
@@ -42,3 +42,7 @@
    
     tick();
   }
+
+
+
+  
